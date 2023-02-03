@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "npm run clean && next build",
+    "start": "next start -p 8081",
+    "clean": "rm -rf .next",
+    "lint": "next lint",
+    "deploy-dev": "npm install && npm run build && eb deploy nextjs-intro2"
   },
   "dependencies": {
     "@next/font": "13.1.2",
