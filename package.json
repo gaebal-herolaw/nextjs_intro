@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "npm run clean && next build",
     "start": "next start -p 8081",
-    "clean": "rm -rf .next",
     "lint": "next lint",
     "deploy-dev": "npm install && npm run build && eb deploy nextjs-intro2"
   },
