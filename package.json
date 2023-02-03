@@ -7,7 +7,7 @@
     "build": "npm run clean && next build",
     "start": "next start -p 8081",
     "lint": "next lint",
-    "deploy-dev": "npm install && npm run build && eb deploy nextjs-intro2"
+    "deploy-dev": "npm install && npm run build && eb deploy nextjs-intro2-dev"
   },
   "dependencies": {
     "@next/font": "13.1.2",
